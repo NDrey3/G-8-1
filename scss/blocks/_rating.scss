@@ -6,6 +6,21 @@
     font-weight: 600;
     font-size: 28px;
     line-height: 32px;
+
+    @include vp-768 {
+      margin: 0 0 32px;
+    }
+
+    @include vp-1024 {
+      margin: 0 0 48px;
+      font-size: 40px;
+      line-height: 44px;
+      text-align: center;
+    }
+
+    @include vp-1304 {
+      margin: 0 0 60px;
+    }
   }
 
   &__list {
@@ -15,9 +30,17 @@
     display: flex;
     flex-wrap: wrap;
     gap: 16px;
+
+    @include vp-1024 {
+      gap: 20px;
+    }
+
+    @include vp-1304 {
+      gap: 24px;
+    }
   }
 
-  &__item {
+  &__item--large {
     flex-grow: 1;
   }
 }

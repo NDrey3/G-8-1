@@ -60,7 +60,7 @@
     }
 
     @include vp-1024 {
-      grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(591px, 1fr));
       gap: 24px;
     }
   }
@@ -77,7 +77,7 @@
     }
 
     @include vp-1024 {
-      grid-template-columns: repeat(auto-fit, minmax(392px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(386px, 1fr));
       gap: 24px;
     }
   }

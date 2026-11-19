@@ -3,9 +3,24 @@
   height: 100%;
   display: flex;
   align-items: flex-start;
-  gap: 0 20px;
+  gap: 28px 20px;
   border-radius: 16px;
   background: $color-gradient;
+
+  @include vp-768 {
+    padding: 28px;
+    flex-direction: column;
+  }
+
+  @include vp-1024 {
+    min-height: 240px;
+    padding: 40px;
+    gap: 40px;
+  }
+
+  @include vp-1304 {
+    gap: 46px;
+  }
 
   &__icon {
     flex-shrink: 0;
@@ -20,6 +35,12 @@
     font-size: 24px;
     line-height: 28px;
     color: $color-white;
+
+    @include vp-1024 {
+      margin: 0 0 16px 0;
+      font-size: 32px;
+      line-height: 36px;
+    }
   }
 
   &__text {
@@ -27,5 +48,10 @@
     font-size: 14px;
     line-height: 18px;
     color: $color-white;
+
+    @include vp-1024 {
+      font-size: 16px;
+      line-height: 22px;
+    }
   }
 }

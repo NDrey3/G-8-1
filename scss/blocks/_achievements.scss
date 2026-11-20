@@ -33,16 +33,11 @@
 
     @include vp-1024 {
       gap: 20px;
-
     }
 
     @include vp-1304 {
       gap: 24px;
       grid-template-columns: repeat(4, 1fr);
-
     }
   }
-
-
-
 }

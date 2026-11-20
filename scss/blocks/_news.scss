@@ -73,6 +73,11 @@
   &__button {
     width: 100%;
 
+    &:hover,
+    &:focus-visible {
+      background-color: $color-blue-zodiac;
+    }
+
     @include vp-1024 {
       max-width: 160px;
       margin: 0 auto;

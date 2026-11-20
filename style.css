@@ -941,12 +941,16 @@ a {
 .about-card {
   position: relative;
   padding: 28px;
+  height: 100%;
   display: flex;
   align-items: center;
   gap: 16px 28px;
   border-radius: 16px;
   background-color: #FFFFFF;
   box-shadow: 0 6px 20px 0 rgba(56, 61, 88, 0.2);
+}
+.about-card:hover, .about-card:focus-visible {
+  background-color: #EAECF4;
 }
 @media (min-width: 1024px) {
   .about-card {
@@ -971,6 +975,12 @@ a {
   justify-content: space-between;
   background-color: #F4F6FA;
   box-shadow: none;
+}
+.about-card--large:hover, .about-card--large:focus-visible {
+  background-color: #EDEFF4;
+}
+.about-card--large:hover .about-card__link, .about-card--large:focus-visible .about-card__link {
+  background-color: #D2D4DA;
 }
 @media (min-width: 768px) {
   .about-card--large {
@@ -1015,6 +1025,9 @@ a {
     border-radius: 8px;
     background-color: #E3E5E9;
     cursor: pointer;
+  }
+  .about-card--large .about-card__link:hover, .about-card--large .about-card__link:focus-visible {
+    background-color: #D2D4DA;
   }
 }
 .about-card__icon {
@@ -1147,6 +1160,10 @@ a {
   background-color: transparent;
   cursor: pointer;
 }
+.rating-card__value:hover, .rating-card__value:focus-visible {
+  color: #2F54DF;
+  border-bottom: 1px solid #2F54DF;
+}
 @media (min-width: 1024px) {
   .rating-card__value {
     font-size: 56px;
@@ -1176,6 +1193,9 @@ a {
   display: flex;
   align-items: center;
   color: #476BF0;
+}
+.rating-card__link:hover, .rating-card__link:focus-visible {
+  color: #2F54DF;
 }
 .rating-card__arrow {
   width: 16px;
@@ -1307,6 +1327,9 @@ a {
   font-size: 14px;
   line-height: 18px;
   color: #1E222E;
+}
+.news-card__link:hover, .news-card__link:focus-visible {
+  color: #476BF0;
 }
 .news-card__icon {
   flex-shrink: 0;
@@ -1624,6 +1647,9 @@ a {
 }
 .news__button {
   width: 100%;
+}
+.news__button:hover, .news__button:focus-visible {
+  background-color: #383F52;
 }
 @media (min-width: 1024px) {
   .news__button {

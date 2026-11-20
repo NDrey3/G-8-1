@@ -8,6 +8,7 @@
   background: $color-gradient;
 
   @include vp-768 {
+    min-height: 180px;
     padding: 28px;
     flex-direction: column;
   }

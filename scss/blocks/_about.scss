@@ -11,7 +11,7 @@
   }
 
   @include vp-1304 {
-    padding-bottom: 120px;
+    padding-bottom: 124px;
   }
 
   &__title {
@@ -61,7 +61,8 @@
 
     @include vp-1024 {
       grid-template-columns: repeat(auto-fit, minmax(591px, 1fr));
-      gap: 24px;
+      gap: 21px;
+      margin: 0 0 19px 0;
     }
   }
 
@@ -73,12 +74,16 @@
     gap: 24px;
 
     @include vp-768 {
-      gap: 20px;
+      gap: 25px;
     }
 
     @include vp-1024 {
       grid-template-columns: repeat(auto-fit, minmax(386px, 1fr));
-      gap: 24px;
+      gap: 20px;
+    }
+
+    @include vp-1304 {
+      gap: 25px;
     }
   }
 }

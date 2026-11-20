@@ -45,6 +45,10 @@
       font-size: 18px;
       line-height: 22px;
 
+      @include vp-768 {
+        max-width: 200px;
+      }
+
       @include vp-1024 {
         font-weight: 600;
         font-size: 30px;
@@ -109,7 +113,7 @@
     @include vp-768 {
       right: 20px;
       bottom: auto;
-      top: 20px;
+      top: 40px;
     }
 
     @include vp-1024 {

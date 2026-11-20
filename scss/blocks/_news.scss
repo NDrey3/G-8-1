@@ -73,7 +73,8 @@
     width: 100%;
 
     @include vp-1024 {
-      width: unset;
+      max-width: 160px;
+      margin: 0 auto;
     }
   }
 }

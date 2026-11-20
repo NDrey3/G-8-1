@@ -900,6 +900,11 @@ a {
   background-color: #D2D4DA;
 }
 
+@media (min-width: 1024px) {
+  .breadcrumbs {
+    padding: 20px 0 0;
+  }
+}
 .breadcrumbs__list {
   list-style: none;
   margin: 0;
@@ -1237,6 +1242,7 @@ a {
   height: 100%;
   display: flex;
   flex-direction: column;
+  align-items: start;
   min-height: 190px;
   background: #F4F6FA;
   border-radius: 16px;
@@ -1601,6 +1607,7 @@ a {
 }
 @media (min-width: 1024px) {
   .news__button {
-    width: unset;
+    max-width: 160px;
+    margin: 0 auto;
   }
 }/*# sourceMappingURL=style.css.map */
